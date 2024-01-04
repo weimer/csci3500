@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>CSCI 3500 &mdash; Software Engineering and Cognition</title>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/starter-template.css" rel="stylesheet">
+</head> 
+
+<style>
+@media (max-width: 550px) {
+   .big-container {
+       display: none;
+   }
+}
+@media (min-width: 550px) {
+   .small-container {
+       display: none;
+   }
+}
+/* Responsive iFrame */
+.responsive-iframe-container {
+   position: relative;
+   padding-bottom: 56.25%;
+   padding-top: 30px;
+   height: 0;
+   overflow: hidden;
+}
+.responsive-iframe-container iframe,   
+.vresponsive-iframe-container object,  
+.vresponsive-iframe-container embed {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+</style>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" class="active" href="index.html">Software Engineering and Cognition</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <!-- <li class="active"><a href="#">Home</a></li> --> 
+            <li><a href="#readings">Readings</a></li>
+            <li><u>Piazza Forum (TBD)</u></li> 
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+<div class="container">
+<div class="starter-template">
+
+<h1>Lectures and Details</h1>
+
+      <div class="row">
+
+        <div class="col-xs-2 col-md-2">Meetings</div>
+        <div class="col-xs-10 col-md-10">
+          Tuesday/Thursday, 1:15-2:40pm, Location TBD
+        </div>
+
+        <div class="col-xs-2 col-md-2">Instructor</div>
+        <div class="col-xs-10 col-md-10">
+          <a href="https://web.eecs.umich.edu/~weimerw/">Westley Weimer</a> 
+        </div>
+
+        <div class="col-xs-2 col-md-2">Office Hours</div>
+        <div class="col-xs-10 col-md-10">TBD
+        </div> 
+
+        <div class="col-xs-2 col-md-2">Course Forum</div>
+        <div class="col-xs-10 col-md-10"><u>Piazza (TBD)</u> 
+        </div> 
+     
+      </div>
+
+<h1>Overview</h1>
+
+<ul>
+  <li>
+    Does your brain treat writing a program more like writing a poem or more like solving an equation? 
+  </li>
+  <li>
+   What does the psychology of perception say about user interface design?
+  </li>
+  <li>
+    Does balancing a pen on your finger show the same patterns of neural activity as balancing a tree data structure? 
+  </li>
+  <li>
+    How do cognitive biases influence code review? What do professional programmers think about the benefits and drawbacks of substances like Adderall or cannabis?     
+  </li>
+  <li>
+  What does the psychology of trust teach us about human decisions to deploy tools?  
+  </li>
+</ul>  
+  
+<p>
+This seminar course covers the intersection of software topics (e.g., reading, writing and debugging programs) and human factors (e.g., perception, bias, cognition). It will involve an exploration of classic topics in psychology (e.g., Asch's conformity experiment, zero-risk bias, functional magnetic resonance imaging, mental rotation, Hick's law, etc.) in a manner that is approachable to students without prior psychology experience. We will relate these topics to activities in computer science and we will discuss the resulting implications on both academic and industrial practice. Students will be graded on in-class discussions and short presentations on the material. Group discussions will focus on constructive conversations that summarize the work, analyze its strengths, and brainstorm ways in which it might be improved in the future. 
+</p> 
+  
+<p>
+Special emphasis will be placed on instructor-led in-person discussions
+of contextual aspects of papers that may be less evident to students (e.g.,
+based on the instructor's first-hand knowledge of the authors or research
+situation). These may include:
+  <ul>
+    <li> The impact or influence the paper had on subsequent work</li> 
+    <li> Whether some aspects of the paper were accidental or planned</li> 
+    <li> Why certain reasonable-seeming approaches were not taken</li>  
+    <li> How difficult certain types of the work were to carry out</li> 
+  </ul> 
+</p> 
+<p>
+Such discussions can help students to view papers as part of a
+collaborative, human activity takes place over a span of time.
+Conversations about how to construct well-designed follow-on work (e.g.,
+balancing risk and rewarding, lifting input assumptions, etc.), at the
+level of the graduate Preliminary Exam, will be encouraged.
+</p> 
+
+<h1>Software Engineering and Cognition</h1>
+<p>
+This class will include papers that explicitly cover human cognitive
+aspects of software engineering and programming languages, such as studies
+that make use of eye tracking or medical imaging. 
+</p> 
+<p>
+It is <b>not</b> expected that incoming students have any expertise in such
+cognitive aspects. Instead, relevant cognitive aspects will be discussed
+(including in the third paper, below) such that students can interpret
+their relevance to computer science. 
+</p> 
+
+<h1>Structure and Presentations</h1>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h3 class="panel-title">Randomized Presentations</h3>
+        </div>
+          <div class="panel-body">
+For each paper discussion I will choose up to three students <i>at
+random</i> to give a five-minute presentation. 
+                </div>
+                </div>
+<p>
+Each selected student will give a five-minute in-person presentation that
+at least (1) summarizes the work, (2) lists its strengths, and (3) lists
+ways in which it might be improved in a subsequent publication. Including
+other information, such as your opinion about the work or its relation to
+other projects, is recommended. 
+</p>
+
+<p>
+The goals of this randomized approach are to encourage all participants to
+read the material thoroughly in advance, to provide jumping-off points for
+detailed discussions, and to allow me to evaluate participation.
+</p>
+
+<p>
+There is no project component to this course &mdash; your primary
+responsibility is to prepare five minutes of cogent discussion for each
+paper. 
+</p> 
+
+<h1>Grading Rubric</h1>
+
+<p>
+Grading will be based on in-person participation. 
+</p> 
+
+<div class="container">
+      <div class="row row-centered">
+        <div class="col-xs-6 col-sm-4 col-centered col-min">
+
+<ul class="list-group">
+  <li class="list-group-item">
+    <span class="badge">40%</span> Paper Presentations
+  </li>
+  <li class="list-group-item">
+    <span class="badge">40%</span> Discussions
+  </li>
+  <li class="list-group-item">
+    <span class="badge">20%</span> Professionalism
+  </li>
+</ul> 
+</div></div></div> 
+</p> 
+
+<p>
+In more detail, <i>Paper Presentations</i> will be graded on the summarization
+of the work (20%), the enumeration of strengths (30%), and areas and
+mechanisms for improvement (50%). 
+  <ul>
+  <li> While paper summarizations are common in many settings, this course
+  places a particular emphasis on identifying areas for improvement that
+  may not be mentioned by the authors of a work. For example, a paper may
+  present an analysis that only works on single-threaded programs, but the
+  paper may not call out this weakness explicitly. Instead, readers may
+  note that all of the benchmarks were single-threaded and that the analysis
+  relies on the values of variables remaining constant. Readers might
+  identify this area for improvement and also identify a potential
+  mechanism for overcoming it (e.g., perhaps the analysis could be
+  augmented with manual annotations about which variables are modified by
+  other threads, or perhaps a dynamic lockset approach like Eraser could be
+  used to provide missing information, etc.). 
+  </li>
+  <li> This identification of paper areas for improvement that are not
+  explicit but are instead implicit (in the "negative space" of the paper,
+  as it were) is an important skill, and one that we will practice
+  together. Similarly, we will work together on identifying how to bring
+  together topics and ideas from computer science to address such
+  weaknesses. 
+  </li> 
+  </ul> 
+</p> 
+
+<P>
+The <i>Discussion</i> component will be assessed by noting when
+students contribute to the conversation and analysis of a
+paper (outside of their presentations). 
+  <ul>
+    <li> Student contributions will be noted on a three-point scale, with
+    two points for a typical discussion element, three points for a
+    more insightful analysis, and one point for a less fruitful
+    interjection. </li> 
+    <li> Discussion points are graded on insight and relevant, rather than
+    on length. A theme of the course is that sometimes a single sentence or
+    observation can significantly influence how a paper is interpreted. The
+    focus is not on long-winded reiterations of the main paper points, but
+    on identifying "interactions" (e.g., "given that they mention in
+    Section 3 that they are recruiting only students, their use of this
+    industrial task in Section 5 may not be indicative ...", etc.) or
+    areas for improvement. </li> 
+    <li> Particularly insightful contributions will be described as such
+    by the instructor (e.g., to help students who may not be as familiar
+    with this sort of course to identify the desired approach). </li> 
+
+    <li> Each student can earn at most three points per class meeting. This
+    is to prevent one student from dominating a discussion while also
+    encouraging students to speak multiple times per meeting. </li> 
+    <li> If there are <i>N</i> course meetings, full discussion credit
+    corresponds to <i>N</i> earned points, distributed in any manner. </li> 
+    <li> Students can make up the discussion component in Office Hours, 
+    earning up to three points per session. </li> 
+
+    <li> The relative simplicity of discussion grading (informally:
+    check-plus, check, check-minus) also helps the professor track 
+    it without interrupting the flow of the conversation. </li> 
+  </ul> 
+</p> 
+
+<p>
+The <i>Professionalism</i> component will be assessed in terms of helping
+to maintain a welcoming environment for everyone and demonstrating our
+shared values. Participants are assumed to be professionals by default, but
+may lose points in certain negative circumstances. Examples of
+less-professional conduct include:  
+  <ul>
+  <li> Rudely interrupting or speaking over someone else. Instead, we favor
+  giving speakers time to complete their thoughts. (The professor will
+  gently move along any stalled or overly-verbose discussion.) 
+  </li> 
+  <li> Suggesting that the quality of a particular paper or statement is in
+  any way related to the demographics of its authors. Instead, we assess
+  papers on the merits of their presented ideas and evidence.
+  </li> 
+  <li> Intentionally using defamatory or belittling phrasing to describe
+  people or groups. Some of the papers we will read and discuss tackle
+  practitioner biases or expertise differences. We want to factually
+  discuss such biases, with a goal of mitigating, rather than perpetuating,
+  those concerns. </li> 
+
+  </ul> 
+</p> 
+
+<p>
+Informally, one sufficient
+condition for an "A" grade is to do a good job whenever you are called on
+to present a paper, to interject insightful comments into the
+discussions of other papers, and to treat others respectfully. 
+</p> 
+
+<p>
+The grading cutoffs are: 
+  <ul>
+    <li> 70% = C- </li> 
+    <li> 73% = C  </li> 
+    <li> 77% = C+ </li> 
+    <li> 80% = B- </li> 
+    <li> 83% = B  </li> 
+    <li> 87% = B+ </li> 
+    <li> 90% = A- </li> 
+    <li> 93% = A  </li> 
+    <li> 98% = A+ </li> 
+  </ul> 
+</p> 
+
+
+<h1>First Class Meeting</h1>
+
+<p>
+The first meeting will take place on Tuesday, January 23rd.
+You are responsible for reading the <i>first two papers</i> in advance.
+</p> 
+
+<p>
+However, I will get the discussion rolling for Paper #1 ("Producing wrong
+data ..."), so you do not need to prepare a presentation for it. The
+discussion for it will probably be short. 
+</p> 
+
+<p>
+I will begin randomly calling on students when we advance to Paper #2. 
+You should prepare your five minute discussions for that paper. 
+</p> 
+
+<h1>Reading List</h1> 
+<a name="readings"></a> 
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <h3 class="panel-title">Read Two Ahead</h3>
+        </div>
+          <div class="panel-body">
+You are responsible for reading and preparing for the next
+two not-yet-discussed papers for any given class meeting. 
+                </div>
+                </div>
+
+<p>
+On average, we will discuss three papers a week (devoting perhaps 50
+minutes to each paper). However, some papers may merit more or less
+discussion. 
+</p>
+
+<p>
+It is often possible to find presentation slides or video recordings
+associated with a paper. You are welcome to use those as part of your
+preparation. 
+</p> 
+
+<p>
+The next paper to discuss may be shown below a highlighted line. You should
+read and prepare at least the next two-to-three papers before the next
+meeting.
+</p> 
+
+
+<ol>
+
+<h4>Software Research and Threats to Validity</h4> 
+
+  <span class=alert-danger>
+<hr> <!-- warn --> 
+<span> 
+
+
+<li>
+Todd Mytkowicz, Amer Diwan, Matthias Hauswirth, Peter F. Sweeney: 
+<A href="http://portal.acm.org/citation.cfm?doid=1508244.1508275">
+Producing
+wrong data without doing anything obviously wrong!</a> 
+ASPLOS 2009: 265-276
+</li> 
+
+
+<li>
+Janet Siegmund, Norbert Siegmund, Sven Apel:
+<a href="https://ieeexplore.ieee.org/document/7194557/">
+Views on Internal and External Validity in Empirical Software
+Engineering.</a> 
+ICSE 2015: 9-19 
+(distinguished paper award)
+
+
+</li> 
+
+<h4>Neuroscience and Language</h4> 
+
+<li>
+Jingyuan E. Chen, Gary H. Glover:
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4565730/">Functional Magnetic Resonance Imaging Methods.</a> 
+Neuropsychology Review, vol. 25, pages 289-313 (2015)
+</li> 
+
+
+<li>
+Ioulia Kovelman, Stephanie A. Baker, Laura-Ann Petitto:
+<a href="https://direct.mit.edu/jocn/article-abstract/20/1/153/4445/Bilingual-and-Monolingual-Brains-Compared-A?redirectedFrom=fulltext">Bilingual and Monolingual Brains Compared: A Functional Magnetic Resonance
+Imaging Investigation of Syntactic Processing and a Possible "Neural
+Signature" of Bilingualism.</a> 
+J. Cogn. Neurosci. 20(1): 153-169 (2008)
+</li> 
+
+<h4>Software Engineering and the Brain</h4>
+
+<li>
+Janet Siegmund, Christian Kästner, Sven Apel, Chris Parnin, Anja Bethmann,
+Thomas Leich, Gunter Saake, André Brechmann:
+<a href="https://dl.acm.org/doi/10.1145/2568225.2568252">
+Understanding understanding source code with functional magnetic resonance
+imaging</a>. ICSE 2014: 378-389
+</li> 
+
+<li>
+Benjamin Floyd, Tyler Santander, Westley Weimer:
+<a href="https://ieeexplore.ieee.org/document/7985660">Decoding the representation of code in the brain: an fMRI study of code
+review and expertise.</a> ICSE 2017: 175-186 (distinguished paper award)
+</li> 
+
+
+<li>
+Yu Huang, Xinyu Liu, Ryan Krueger, Tyler Santander, Xiaosu Hu, Kevin Leach,
+Westley Weimer:
+<a href="https://ieeexplore.ieee.org/document/8812086">
+Distilling neural representations of data structure manipulation using fMRI
+and fNIRS.</a> ICSE 2019: 396-407 (distinguished paper award)
+</li> 
+
+
+<li>
+Ryan Krueger, Yu Huang, Xinyu Liu, Tyler Santander, Westley Weimer, Kevin
+Leach: 
+<a href="https://dl.acm.org/doi/10.1145/3377811.3380348">
+Neurological Divide: An fMRI Study of Prose and Code Writing.</a> 
+International Conference on Software Engineering (ICSE): 2020
+</li> 
+
+<li>
+Zachary Karas, Andrew Jahn, Westley Weimer, Yu Huang: 
+<a href="https://dl.acm.org/doi/10.1145/3468264.3468579">Connecting the Dots:
+Rethinking the Relationship between Code and Prose Writing with Functional
+Connectivity:</a> Foundations of Software Engineering (ESEC/FSE): 2021 
+</li> 
+
+
+<h4>Software Expertise and the Brain</h4> 
+
+<li>
+Norman Peitek, Annabelle Bergum, Maurice Rekrut, Jonas Mucke, Matthias
+Nadig, Chris Parnin, Janet Siegmund, Sven Apel:
+<a href="https://dl.acm.org/doi/10.1145/3540250.3549084">
+Correlates of programmer efficacy and their link to experience: a combined
+EEG and eye-tracking study.</a> ESEC/SIGSOFT FSE 2022: 120-131
+</li> 
+
+
+<li>
+Ikutani Y, Kubo T, Nishida S, Hata H, Matsumoto K, Ikeda K, Nishimoto S.
+<a href="https://www.eneuro.org/content/8/1/ENEURO.0405-20.2020">Expert Programmers Have Fine-Tuned Cortical Representations of Source Code.</a> 
+eNeuro. 2021 Jan 28. 8(1): ENEURO.0405-20.2020. 
+</li> 
+
+
+<h4>Implications &mdash; Code Comprehension</h4> 
+
+<li> 
+Sarah Fakhoury, Devjeet Roy, Yuzhan Ma, Venera Arnaoudova, Olusola O.
+Adesope:
+<a href="https://link.springer.com/article/10.1007/s10664-019-09751-4">
+Measuring the impact of lexical and structural inconsistencies on
+developers' cognitive load during bug localization.</a> Empir. Softw. Eng.
+25(3): 2140-2178 (2020)
+</li> 
+
+
+<li>
+Norman Peitek, Sven Apel, Chris Parnin, André Brechmann, Janet Siegmund:
+<a href="https://ieeexplore.ieee.org/document/9402005">Program Comprehension and Code Complexity Metrics: An fMRI Study.</a> ICSE
+2021: 524-536
+(distinguished paper award)
+</li> 
+
+
+<h4>Implications &mdash; Code Review and Trust </h4> 
+
+<li>
+Tyler J. Ryan, Gene M. Alarcon, Charles Walter, Rose F. Gamble, Sarah A.
+Jessup, August A. Capiola, Marc D. Pfahler:
+<a href="https://link.springer.com/chapter/10.1007/978-3-030-22351-9_31">Trust in Automated Software Repair - The Effects of Repair Source,
+Transparency, and Programmer Experience on Perceived Trustworthiness and
+Trust.</a> HCI (29) 2019: 452-470
+</li> 
+
+
+<li>
+Yu Huang, Kevin Leach, Zohreh Sharafi, Nicholas McKay, Tyler Santander,
+Westley Weimer: 
+<a href="https://dl.acm.org/doi/10.1145/3368089.3409681">Biases and Differences in Code Review using Medical Imaging
+and Eye-Tracking: Genders, Humans, and Machines:</a> Foundations of Software
+Engineering (ESEC/FSE): 2020
+</li> 
+
+
+<h4>Implications &mdash; Learning and Teaching</h4> 
+
+<li>
+Ryan Shaun Joazeiro de Baker, Sidney K. D'Mello, Ma. Mercedes T. Rodrigo,
+Arthur C. Graesser:
+<A href="https://www.sciencedirect.com/science/article/abs/pii/S1071581909001797?via%3Dihub">
+Better to be frustrated than bored: The incidence, persistence, and impact
+of learners' cognitive-affective states during interactions with three
+different computer-based learning environments.</a> Int. J. Hum. Comput. Stud.
+68(4): 223-241 (2010)
+</li> 
+
+
+<li>
+Naser Al Madi, Cole S. Peterson, Bonita Sharif, Jonathan I. Maletic:
+<a href="https://ieeexplore.ieee.org/document/9462965">
+From Novice to Expert: Analysis of Token Level Effects in a Longitudinal
+Eye Tracking Study.</a> ICPC 2021: 172-183
+</li> 
+
+
+<li>
+Nischal Shrestha, Colton Botta, Titus Barik, Chris Parnin:
+<A href="https://dl.acm.org/doi/10.1145/3511062">Here we go again: why is it difficult for developers to learn another
+programming language?</a> Commun. ACM 65(3): 91-99 (2022) (distinguished paper
+award)
+</li> 
+
+<li>
+Madeline Endres, Zachary Karas, Xiaosu Hu, Ioulia Kovelman, Westley Weimer:
+<a href="https://ieeexplore.ieee.org/document/9402035">Relating Reading, Visualization, and Coding for New Programmers: A
+Neuroimaging Study:</a> International Conference on Software Engineering
+(ICSE): (2021) 
+  <ul>
+  <li>
+  <i>Optional:</i> Madeline Endres, Madison Fansher, Priti Shah, Westley Weimer: 
+  <a href="https://dl.acm.org/doi/10.1145/3468264.3468583">To Read or To
+Rotate? Comparing the Effects of Technical Reading Training and Spatial
+Skills Training on Novice Programming Ability:</a> Foundations of Software
+Engineering (ESEC/FSE): 2021 
+  </ul> 
+</li> 
+
+
+
+<li>
+Chris Parnin, Alessandro Orso:
+<a href="http://doi.acm.org/10.1145/2001420.2001445">
+Are automated debugging techniques actually helping programmers?</a> 
+ISSTA
+2011: 199-209
+
+<h4>Software Engineering and Deep Learning </h4> 
+
+
+<li>
+Ru Zhang, Wencong Xiao, Hongyu Zhang, Yu Liu, Haoxiang Lin, Mao Yang:
+<a href="https://dl.acm.org/doi/10.1145/3377811.3380362">An empirical study on program failures of deep learning jobs.</a> ICSE 2020:
+1159-1170 (distinguished paper award)
+</li> 
+
+<li>
+Hung Viet Pham, Shangshu Qian, Jiannan Wang, Thibaud Lutellier, Jonathan
+Rosenthal, Lin Tan, Yaoliang Yu, Nachiappan Nagappan:
+<a href="https://dl.acm.org/doi/10.1145/3324884.3416545">Problems and Opportunities in Training Deep Learning Software Systems: An
+Analysis of Variance.</a> ASE 2020: 771-783 (distinguished paper award)
+</li> 
+
+</li> 
+
+<h4>Program Repair &mdash; Techniques and Criticism</h4> 
+
+<!--
+<li>
+Jeff H. Perkins, Sunghun Kim, Sam Larsen, Saman P. Amarasinghe, Jonathan
+Bachrach, Michael Carbin, Carlos Pacheco, Frank Sherwood, Stelios
+Sidiroglou, Greg Sullivan, Weng-Fai Wong, Yoav Zibin, Michael D. Ernst,
+Martin C. Rinard: 
+<a href="http://doi.acm.org/10.1145/1629575.1629585">
+Automatically patching errors in deployed software.</a>
+SOSP 2009: 87-102
+--> 
+
+
+<li>
+Claire Le Goues, Michael Dewey-Vogt, Stephanie Forrest, Westley Weimer: 
+<a href="http://dx.doi.org/10.1109/ICSE.2012.6227211">
+A Systematic Study of Automated Program Repair: Fixing 55 out of 105 bugs
+for $8 Each.</a> 
+International Conference on Software Engineering (ICSE) 2012:
+3-13 
+  <ul>
+  <li> <i>Optional: </i> 
+  Westley Weimer, ThanhVu Nguyen, Claire Le Goues, Stephanie
+  Forrest: 
+  <A href="http://dx.doi.org/10.1109/ICSE.2009.5070536">
+  Automatically finding patches using genetic programming.</a>
+  ICSE
+  2009: 364-374 (distinguished paper award, ten-year impact award)
+  </ul> 
+
+
+<li>
+
+    Dongsun Kim, Jaechang Nam, Jaewoo Song, Sunghun Kim:
+    <a href="http://dl.acm.org/citation.cfm?id=2486893">
+    Automatic patch generation learned from human-written patches. </a> 
+    ICSE
+    2013: 802-811 (distinguished paper award)
+
+<li> 
+
+    Martin Monperrus:
+    <a href="http://doi.acm.org/10.1145/2568225.2568324">
+    A critical review of "automatic patch generation learned from
+    human-written patches": essay on the problem statement and the
+    evaluation of automatic software repair. </a> 
+    ICSE 2014: 234-242
+</li> 
+
+
+<li> 
+
+  Fan Long, Martin Rinard:
+  <a href="http://doi.acm.org/10.1145/2786805.2786811">
+  Staged program repair with condition synthesis.</a> 
+  ESEC/SIGSOFT FSE 2015:
+  166-178
+</li> 
+
+<li>
+
+Sergey Mechtaev, Jooyong Yi, Abhik Roychoudhury:
+<a href="http://doi.acm.org/10.1145/2884781.2884807">
+Angelix: scalable multiline program patch synthesis via symbolic analysis.
+</a> 
+ICSE 2016: 691-701
+</li> 
+
+<li> OPTIONAL: We are done reading papers formally. You don't have to read
+any more. </li> 
+
+<li>
+Thomas Durieux, Fernanda Madeiral, Matias Martinez, Rui Abreu:
+<a href="https://dl.acm.org/doi/10.1145/3338906.3338911">Empirical review of Java program repair tools: a large-scale experiment on
+2,141 bugs and 23,551 repair attempts.</a> ESEC/SIGSOFT FSE 2019: 302-313
+(distinguished paper award)
+</li> 
+
+<li>
+Joel Lehman, Jeff Clune, Dusan Misevic, Christoph Adami, Lee Altenberg,
+Julie Beaulieu, Peter J. Bentley, Samuel Bernard, Guillaume Beslon, David
+M. Bryson, Nick Cheney, Patryk Chrabaszcz, Antoine Cully, Stéphane
+Doncieux, Fred C. Dyer, Kai Olav Ellefsen, Robert Feldt, Stephan Fischer,
+Stephanie Forrest, Antoine Frénoy, Christian Gagné, Léni K. Le Goff, Laura
+M. Grabowski, Babak Hodjat, Frank Hutter, Laurent Keller, Carole Knibbe,
+Peter Krcah, Richard E. Lenski, Hod Lipson, Robert MacCurdy, Carlos
+Maestre, Risto Miikkulainen, Sara Mitri, David E. Moriarty, Jean-Baptiste
+Mouret, Anh Nguyen, Charles Ofria, Marc Parizeau, David P. Parsons, Robert
+T. Pennock, William F. Punch, Thomas S. Ray, Marc Schoenauer, Eric Schulte,
+Karl Sims, Kenneth O. Stanley, François Taddei, Danesh Tarapore, Simon
+Thibault, Richard A. Watson, Westley Weimer, Jason Yosinski:
+<A href="https://direct.mit.edu/artl/article/26/2/274/93255/The-Surprising-Creativity-of-Digital-Evolution-A">
+The Surprising Creativity of Digital Evolution: A Collection of Anecdotes
+from the Evolutionary Computation and Artificial Life Research
+Communities.</a>
+Artif. Life 26(2): 274-306 (2020)
+</li> 
+
+
+</ol> 
+
+
+</div>
+</div> 
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
